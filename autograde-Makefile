@@ -1,0 +1,8 @@
+FOLDER=src/ 
+all:
+	tar xvf autograde.tar
+	mv fibo.cpp $(FOLDER)
+	(cd src; ./grade.sh)
+
+clean:
+	rm -rf *~ $(FOLDER)

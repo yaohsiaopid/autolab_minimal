@@ -7,6 +7,6 @@ int main(int argc, char* argv[]) {
     for(int i = 0; i < 10; i++) {
         score += (fibo(test_cases[i]) == gold[i]);
     }
-    printf("{\"scores:\" {\"Correctness\":%d}}\n", score*10);
+    printf("{\"scores\": {\"Correctness\":%d}}\n", score*10);
     return 0;
 }
